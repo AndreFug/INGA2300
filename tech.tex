@@ -1,0 +1,48 @@
+\subsection{Teknologi}
+% \begin{enumerate}
+%     \item Sensorer å bruke:
+%     \begin{itemize}
+%         \item Temperatur
+%         \item Fuktighet
+%         \item CO$_2$
+%         \item Luftkvalitet
+%     \end{itemize}
+%     \item Data innhenting:
+%     \begin{itemize}
+%         \item Værdata
+%         \item Er lokalet booket, hvor lenge
+%         \item Hvor mange er i lokalet
+%     \end{itemize}
+%     \item Arkitektur
+%     \begin{itemize}
+%         \item Modulær arkitektur
+%         \item Reactive AI
+%     \end{itemize}
+% \end{enumerate}
+
+
+% Tekst, kan bli for mye
+Bruken av sensorer og data i et moderne bygg klima er essensielt for å produsere et behagelig, energi-effektivt og bærekraftig inneklima. De følgende metodene sikrer at framtidige bygginger opprettholder dette.
+
+\subsubsection{Sensorer}\label{section:sensors}
+Temperatursensorer spiller en sentral rolle i overvåkningen og reguleringen av et innendørs klimaanlegg. Ved å bruke sanntids data gjør slike sensorer det mulig for klimaanlegget å opprettholde en jevn og behagelig temperatur i byggets lokaler. Dette sikrer at lokalet ikke blir for varmt eller kaldt, noe som bidrar til energieffektivitet og komfort i lokalet.
+\\
+\\
+Fuktighets sensorer er viktige, de overvåker fuktigheten i lokalene. Å opprettholde en fuktighet på 20\% - 40\% er avgjørende for å forhindre ubehag forårsaket  av enten for tørr eller fuktig luft. I tillegg bidrar ideell fuktighet i å ivareta bygget og møbler og hindrer oppbygging av mugg. 
+\\
+\\
+Karbondioksid (CO$_2$) sensorer brukes til å overvåke luftkvaliteten i luften, høy verdi av CO$_2$ er ofte et tegn på dårlig ventilasjon og spesielt i rom med mange personer. Dette kan også være en indikasjon på at det er mange i et rom. Utover generelt luftkvalitets målinger er viktige sensorer, slike sensorer måler etter \textit{PM2.5} altså partikler som er mindre enn 2.5 \micro \hspace{1mm}meter, karbonmonoksid(CO), ozon (O3), nitrogendioksid (NO2), svoveldioksid (SO2) og flyktige organiske forbindelser (VOC). Dette er gasser som kan være farlige for mennesker. 
+
+
+\subsubsection{Data innhenting}
+Innhenting av data er en vital del av regulere ventilasjonen av byggingen. Dette gir nødvendig informasjon til kunstig intelligens (KI) modellen for å ta besluttinger. Det er flere typer av data som er nødvendig til at modellen skal fungere.
+
+Værdata gir informasjon om ytre påvirkninger til lokasjonen. Dette kan enkelt hentes inn ved å bruke \textit{API} til nettsider som \href{https://developer.yr.no/}{\textit{Yr}} og \href{https://api.windy.com/point-forecast/docs#parameters}{\textit{Windy}} her kan data som luftfuktighet, vind hastighet og temperatur gi viktig informasjon til KI modellen. Samtidig vil informasjon om rom booking gi informasjon om lokalet vil være i bruk i framtiden og okkupasjons data gi sanntid data om hvor mange som er i lokalet. Denne dataen ilag med \textit{IOT} fra sensorene nevnt i avsnittet over \ref{section:sensors} fullføre dataen KI modellen vil trenge for å regulere lokalene. 
+
+
+
+\subsubsection{Arkitektur}
+Applikasjonen vil følge en modulær arkitektur 
+% Kansje vurdere meir beskrivende namn
+\subsubsection{KI}
+Kunstig intelligens (KI) ligger sentralt i å kunne bruke software for å effektivisere bygget. Produktet bruker et smalt KI

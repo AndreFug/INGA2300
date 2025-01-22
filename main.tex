@@ -1,0 +1,131 @@
+% Author - Jon Arnt Kårstad, NTNU IMT
+\documentclass{article}
+
+% Importing document settings from our file "packages.sty"
+\usepackage{packages}
+
+% Beginning of document
+\begin{document}
+
+% Inserting title page
+\import{./}{title}
+
+% Defining front matter settings (Norsk: innstillinger for forord m.m.)
+\frontmatter
+
+% Inserting table of contents
+\tableofcontents
+
+% Inserting list of figures & list of tables
+\listoffigures
+\listoftables
+
+% Defining main matter settings (Norsk: innstillinger for hoveddelen av teksten)
+\mainmatter
+
+% Introduction explaining this LaTeX-template
+%% \import{./Sections/}{}
+
+
+
+% Example section added directly into the main-file
+
+\textbf{Forretningside:}
+Minimere bruk av strøm ved hjelp av AI
+
+
+% Printing bibliography
+\newpage
+\printbibliography[heading = bibintoc, title = Bibliography]    % 'bibintoc' inserts our bibliography into the table of contents
+
+
+\section{Ide}
+-Bygg og eiendomsforvaltning (Smart Building/Facility Management):
+
+-Energistyring og optimalisering
+
+Problem/Behov: Bygninger står for en stor del av energiforbruket i samfunnet, og ineffektiv styring av varme, kjøling og ventilasjon fører til unødvendig høye kostnader og klimagassutslipp.
+AI-løsning: Bruk av sensorer og dataanalyse for å justere lys, varme og ventilasjon i sanntid basert på belegg, vær, tidspunkt på døgnet osv.
+Verdiskaping: Potensielt store kostnadsbesparelser, redusert energiforbruk og bedre inneklima
+
+% Inserting appendix with separate settings
+
+\section{Innledning (maksimalt 250 ord)}
+\subsection*{Relevans}
+Hvorfor er det viktig å se nærmere på det dere skriver om i rapporten?
+
+\subsection*{Problem og behov}
+Kort om det underliggende problemet/behovet dere har valgt å ta utgangspunkt i, og hvordan deres konsept (produkt/tjeneste) kan løse dette problemet.
+
+\subsection*{Oppsummering av hovedfunn}
+Innledningen skal inneholde en kort oppsummering av hovedfunn, og av evalueringen av konseptet fra bærekraftsmessig, samfunnsmessig og økonomisk ståsted.
+
+\section{Problem og utvikling av teknologisk konsept}
+\subsection*{Problem/behov}
+Beskrivelse av problemet/behovet i valgt bransje.
+
+\subsection*{Teknologisk konsept}
+Beskrivelse av konseptet med kommersielt potensial.
+
+\subsection*{Samfunnsmessige og bærekraftsmessige utfordringer}
+Vurdering av om problemet er økende frem mot 2030, og hvordan konseptet støtter nødvendig omstilling.
+
+\input{tech}
+
+\subsection*{Gruppens styrker}
+Beskrivelse av styrker som gjør gruppen godt egnet til å løse problemet.
+
+\input{marked}
+
+
+\section{Miljøanalyse og bærekraftsperspektiver}
+Ifølge et blogginnlegg fra GreenMatch, et bærekraftig energiselskap fra Storbritannia, går 34\% av energien som når sluttbrukeren til spille. Dette kan skyldes ineffektive apparater, men også ineffektive energivaner, som å la innretninger stå på når de ikke er i bruk. Denne energisløsingen fører direkte til klimaeffekter, ikke bare som konsekvenser av den bortkastede energien, men også i prosessene som kreves for å produsere energien som til slutt går til spille. Ifølge den Europeiske Unionen (EU) har energitilgjengeligheten gått ned de siste årene i lag med tilgjengelighet på fossile brennstoff, noe som gjør det viktigere enn noen gang å utnytte energien vi har på en bedre måte. Ved å redusere energisløsing hos sluttbrukeren, reduseres sluttbrukerens energiforbruk, energietterspørselen senkes, og med nok innsats kan forurensning fra energiproduksjon reduseres drastisk.
+
+Boreas har som mål å øke energieffektiviteten hos sluttbrukere ved å redusere energisløsing som oppstår på grunn av ineffektive energivaner. Ved å automatisere strømstyring på kontorarealer ved hjelp av KI, kan Boreas fremme energieffektive praksiser basert på bruksmønstre. Den kan slå av lys etter arbeidstid, sørge for at varmeovner kun brukes til å oppnå stabile temperaturer, og kontrollere mange andre apparater med hensyn til eksterne faktorer som andre automatiseringstjenester sjeldent tar i bruk. Ved å implementere Boreas på kontorplassen kan selskaper redusere strømregninger, øke komforten på arbeidsplassen, og bidra til en konkret positiv innvirkning på miljøet.
+
+Ved å implementere Boreas kan selskaper tilpasse seg FNs bærekraftsmål (UN SDG) samt andre lignende mål i forskjellige verdensregioner. Boreas reduserer energiforbruket og øker andelen energi som brukes til meningsfulle formål, noe som er i tråd med SDG 12 (Bærekraftig forbruk), ulike energieffektivitetslover og -programmer i USA, samt EUs Green Deal-politikk. Ved å redusere energisløsing bidrar selskaper også indirekte til å redusere sine utslipp og fremme et grønnere klima i samsvar med SDG 13 (Klimatiltak).
+
+\subsection*{Produksjon, bruk og avhending}
+Betraktninger rundt energi, klima, ressursbruk, helse og økosystemer.
+
+\subsection*{Miljøvurderingsmetoder}
+Beskrivelse av metoder som livsløpsvurdering, fotavtrykksanalyse eller materialstrømsanalyse.
+
+\section{Sammenstilling, refleksjon og diskusjon (maksimalt 750 ord)}
+\subsection*{Kritiske refleksjoner}
+Problemstillinger som har oppstått ved overgang til bruk av kunstig intelligens.
+
+\subsection*{Mål for konseptet}
+Hva som legges til grunn som mål.
+
+\subsection*{Bærekraft og avveininger}
+Diskusjon av økonomisk, samfunnsmessig og miljømessig bærekraft.
+
+\subsection*{Usikkerhetsmomenter}
+Refleksjon over begrensninger og usikkerhetsmomenter.
+
+\subsection*{Veien videre}
+Er konseptet verdt å gå videre med?
+
+\section{Referanseliste}
+\begin{itemize}
+    \item [1.] \emph{Referanse 1}
+    \item [2.] \emph{Referanse 2}
+    \item [3.] \emph{Referanse 3}
+\end{itemize}
+
+\section{Vedlegg}
+\subsection*{Kontaktlogg}
+Beskrivelse av kontakt med eksterne aktører.
+
+\subsection*{Beregninger}
+Detaljerte utregninger.
+
+
+\addappendix
+\import{./Appendices/}{example_appendix}
+
+
+
+% End of document
+\end{document}

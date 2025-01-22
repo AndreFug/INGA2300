@@ -1,0 +1,205 @@
+% Comprehensive List of BibTeX and biblatex Entry Types
+%
+% Standard BibTeX Entry Types:
+% @article:
+%   For journal articles.
+%   Required: author, title, journal, year
+%   Optional: volume, number, pages, month, note
+%
+% @book:
+%   For entire books.
+%   Required: author/editor, title, publisher, year
+%   Optional: volume/number, series, address, edition, month, note
+%
+% @booklet:
+%   For non-published booklets.
+%   Required: title
+%   Optional: author, howpublished, address, month, year, note
+%
+% @conference (alias for @inproceedings):
+%   For conference papers.
+%   Required: author, title, booktitle, year
+%   Optional: editor, volume/number, series, pages, address, month, organization, publisher, note
+%
+% @inbook:
+%   For a part of a book (e.g., chapter).
+%   Required: author/editor, title, chapter/pages, publisher, year
+%   Optional: volume/number, series, type, address, edition, month, note
+%
+% @incollection:
+%   For a part of a collection (e.g., an article in an edited book).
+%   Required: author, title, booktitle, year
+%   Optional: editor, volume/number, series, type, chapter, pages, address, edition, month, note
+%
+% @inproceedings:
+%   For conference papers.
+%   Required: author, title, booktitle, year
+%   Optional: editor, volume/number, series, pages, address, month, organization, publisher, note
+%
+% @manual:
+%   For technical documentation.
+%   Required: title
+%   Optional: author, organization, address, edition, month, year, note
+%
+% @mastersthesis:
+%   For Master's theses.
+%   Required: author, title, school, year
+%   Optional: type, address, month, note
+%
+% @misc:
+%   For miscellaneous references.
+%   Optional: author, title, howpublished, month, year, note
+%
+% @phdthesis:
+%   For PhD theses.
+%   Required: author, title, school, year
+%   Optional: type, address, month, note
+%
+% @proceedings:
+%   For conference proceedings.
+%   Required: title, year
+%   Optional: editor, volume/number, series, address, month, publisher, organization, note
+%
+% @techreport:
+%   For technical reports.
+%   Required: author, title, institution, year
+%   Optional: type, number, address, month, note
+%
+% @unpublished:
+%   For unpublished documents.
+%   Required: author, title, note
+%   Optional: month, year
+%
+% Additional biblatex Entry Types:
+% @patent:
+%   For patents.
+%   Required: author, title, number, year
+%   Optional: type, address, month, note
+%
+% @standard:
+%   For standards or specifications.
+%   Required: title, year
+%   Optional: author, institution, number, month, note
+%
+% @legislation:
+%   For legal documents (e.g., statutes, laws).
+%   Required: title, year
+%   Optional: author, note
+%
+% @jurisdiction:
+%   For legal jurisdictions.
+%   Required: name, year
+%   Optional: note
+%
+% @online:
+%   For online resources (e.g., websites, blogs).
+%   Required: author, title, url, year
+%   Optional: month, note
+%
+% @software:
+%   For software or programs.
+%   Required: author, title, version, year
+%   Optional: organization, month, note
+%
+% @audio:
+%   For audio recordings.
+%   Required: author, title, year
+%   Optional: publisher, note
+%
+% @video:
+%   For video recordings.
+%   Required: author, title, year
+%   Optional: publisher, note
+%
+% @music:
+%   For musical scores.
+%   Required: author, title, year
+%   Optional: publisher, note
+%
+% @performance:
+%   For live performances.
+%   Required: author, title, year
+%   Optional: location, date, note
+%
+% @thesis:
+%   For theses (general; replaces @mastersthesis and @phdthesis).
+%   Required: author, title, type, school, year
+%   Optional: address, month, note
+%
+% @report:
+%   For general reports (replaces @techreport).
+%   Required: author, title, institution, year
+%   Optional: type, number, address, month, note
+%
+% @dataset:
+%   For datasets.
+%   Required: author, title, year
+%   Optional: publisher, url, note
+%
+% @artwork:
+%   For artworks.
+%   Required: author, title, year
+%   Optional: gallery, location, note
+%
+% @image:
+%   For visual media.
+%   Required: author, title, year
+%   Optional: publisher, note
+%
+% @map:
+%   For maps or geographic data.
+%   Required: title, year
+%   Optional: author, publisher, location, note
+%
+% @movie:
+%   For movies or films.
+%   Required: title, year
+%   Optional: director, note
+%
+% @slide:
+%   For presentation slides.
+%   Required: author, title, year
+%   Optional: event, location, note
+%
+% @letter:
+%   For letters.
+%   Required: author, title, year
+%   Optional: note
+%
+% @memo:
+%   For memos.
+%   Required: author, title, year
+%   Optional: note
+%
+% @event:
+%   For events or occurrences.
+%   Required: title, year
+%   Optional: location, note
+
+
+
+
+@book{sagan_1993, 
+    place = "New York", 
+    title = "Brocas brain: reflections on the romance of science", 
+    publisher = "Presidio Press", 
+    author = "Sagan, Carl", 
+    year = 1993
+}
+
+@article{ghia_1982,
+    author = "U. Ghia and K. N. Ghia and C. T. Shin",
+    title = "High-Re Solutions for Incompressible Flow Using the Navier-Stokes Equations and a Multigrid Method",
+    journal = "Journal of Computational Physics",
+    volume = "48",
+    pages = "387-411",
+    year = 1982
+}
+
+% This reference is visible in the Bibliography, but not in the text above it. To see how this is done, have a look at the code for the 'Introduction'-section
+@online{imt_software_wiki,
+    author = "NTNU, Department of Marine Technology", 
+    title = "IMT Software Wiki - LaTeX", 
+    url = "https://www.ntnu.no/wiki/display/imtsoftware/LaTeX", 
+    urldate = "2020-09-15"      % This is the date we entered the page
+}
